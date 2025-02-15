@@ -1,0 +1,21 @@
+{
+  "category": "Mobile Phones",
+  "products": [
+    {
+      "id": "mobile-001",
+      "name": "Smartphone A",
+      "price": 699,
+      "description": "A great smartphone with excellent features.",
+      "specifications": { "screenSize": "6.5 inches", "ram": "6GB" },
+      "images": ["images/mobile-001.jpg"]
+    },
+    {
+      "id": "mobile-002",
+      "name": "Smartphone B",
+      "price": 799,
+      "description": "A flagship device with top-notch performance.",
+      "specifications": { "screenSize": "6.7 inches", "ram": "8GB" },
+      "images": ["images/mobile-002.jpg"]
+    }
+  ]
+}

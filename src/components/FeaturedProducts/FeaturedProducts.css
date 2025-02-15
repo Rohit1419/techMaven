@@ -1,0 +1,28 @@
+.quick-view-overlay {
+  background-color: rgba(7, 7, 7, 0.047);
+}
+
+.featured-slider::-webkit-scrollbar {
+  height: 8px;
+}
+
+.featured-slider::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.featured-slider::-webkit-scrollbar-thumb {
+  background: #2563eb;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.featured-slider::-webkit-scrollbar-thumb:hover {
+  background: #1d4ed8;
+}
+
+/* For Firefox */
+.featured-slider {
+  scrollbar-width: thin;
+  scrollbar-color: #2563eb #f1f1f1;
+}

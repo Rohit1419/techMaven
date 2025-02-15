@@ -1,0 +1,15 @@
+.footer-input::placeholder {
+  color: #9ca3af;
+}
+
+.footer-form input:focus {
+  background-color: #1f2937;
+}
+
+.social-link {
+  transition: transform 0.2s;
+}
+
+.social-link:hover {
+  transform: translateY(-2px);
+}
