@@ -73,7 +73,7 @@ export default function Navbar() {
               <div className="nav-item flex items-center space-x-2 cursor-pointer  transition-colors">
                 <h3 className="nav-text text-gray-700 font-medium">
                   <FontAwesomeIcon icon={faKeyboard} className="nav-icon" />{" "}
-                  Accessories
+                  Accessories/Gadgets
                 </h3>
               </div>
             </div>
