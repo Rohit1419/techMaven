@@ -1,0 +1,11 @@
+/*  */
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+  color: #4f39f6;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

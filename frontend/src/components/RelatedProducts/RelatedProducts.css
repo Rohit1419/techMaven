@@ -1,0 +1,31 @@
+@media (max-width: 1024px) {
+  .featured-slider::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .featured-slider::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+  }
+
+  .featured-slider::-webkit-scrollbar-thumb {
+    background: #2563eb;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+
+  .featured-slider::-webkit-scrollbar-thumb:hover {
+    background: #1d4ed8;
+  }
+}
+
+@media (min-width: 1024px) {
+  .featured-slider::-webkit-scrollbar {
+    display: none;
+  }
+
+  .featured-slider {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}

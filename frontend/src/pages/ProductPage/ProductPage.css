@@ -1,0 +1,13 @@
+.main-image {
+  aspect-ratio: 1;
+  object-fit: contain;
+  max-height: 350px;
+}
+
+/* Reduce padding/margins in various sections */
+.product-gallery,
+.product-info,
+.specifications,
+.product-review {
+  margin-bottom: 1rem;
+}
