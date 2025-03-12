@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./AddProduct.css";
+import baseURL from "../../config/api";
 
 const AddProduct = () => {
   const [formData, setFormData] = useState({
@@ -59,7 +60,7 @@ const AddProduct = () => {
     });
 
     try {
-      const response = await fetch("http://localhost:5000/api/upload", {
+      const response = await fetch(`${baseURL}/upload`, {
         method: "POST",
         body: formData,
       });
@@ -117,7 +118,7 @@ const AddProduct = () => {
 
     setLoading(true);
     try {
-      const response = await fetch("http://localhost:5000/api/products", {
+      const response = await fetch(`${baseURL}/products`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

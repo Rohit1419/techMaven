@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
 import ProductCard from "../ProductCard/ProductCard";
 import "./RelatedProducts.css";
+import baseURL from "../../config/api";
 
 const RelatedProducts = ({ currentProductId, category }) => {
   const [products, setProducts] = useState([]);
@@ -21,7 +22,7 @@ const RelatedProducts = ({ currentProductId, category }) => {
     const fetchRelatedProducts = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/products/category/${category}`
+          `${baseURL}/products/category/${category}`
         );
         const data = await response.json();
         const filteredProducts = data.filter(

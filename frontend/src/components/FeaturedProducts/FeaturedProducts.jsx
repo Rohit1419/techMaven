@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
 import ProductCard from "../ProductCard/ProductCard";
 import "./FeaturedProducts.css";
+import baseURL from "../../config/api";
 
 export default function FeaturedProducts() {
   const [products, setProducts] = useState([]);
@@ -20,7 +21,7 @@ export default function FeaturedProducts() {
   useEffect(() => {
     const fetchFeaturedProducts = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/products");
+        const response = await fetch(`${baseURL}/products`);
         const data = await response.json();
 
         // Filter for products added in last month and limit to 8

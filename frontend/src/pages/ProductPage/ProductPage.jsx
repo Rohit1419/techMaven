@@ -7,6 +7,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
 import RelatedProducts from "../../components/RelatedProducts/RelatedProducts";
+import baseURL from "../../config/api";
 
 const ProductPage = () => {
   const [product, setProduct] = useState(null);
@@ -17,9 +18,7 @@ const ProductPage = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const response = await fetch(
-          `http://localhost:5000/api/products/${id}`
-        );
+        const response = await fetch(`${baseURL}/products/${id}`);
         const data = await response.json();
         setProduct(data);
         setMainImage(data.image[0]);
