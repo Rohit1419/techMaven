@@ -22,7 +22,7 @@ export default function Navbar() {
           <div className="navbar-top flex items-center justify-between md:justify-center py-4 border-b">
             <div className="navbar-brand flex items-center space-x-2">
               <img
-                src="/image.png"
+                src="/techmaven.png"
                 alt="TechMaven Logo"
                 className="navbar-logo h-8 w-8"
               />

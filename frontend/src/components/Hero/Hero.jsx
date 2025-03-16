@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <div className="hero-section min-h-screen bg-gradient-to-r from-gray-100 to-gray-50">
       <div className="hero-container h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="hero-content flex flex-col-reverse md:flex-row items-center justify-center min-h-screen py-6 md:py-16 gap-8">
+        <div className="hero-content flex flex-col-reverse md:flex-row items-center justify-center min-h-screen  gap-8">
           {/* Left Content */}
           <div className="hero-text-content w-full md:w-1/2 text-center md:text-left">
             <h1 className="hero-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900">
@@ -22,16 +22,20 @@ export default function Hero() {
               covered.
             </p>
             <div className="hero-cta-group flex flex-col sm:flex-row gap-4 justify-center md:justify-start mt-8">
-              <button className="hero-cta-primary w-full sm:w-auto bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center gap-2">
-                Shop Now
-                <FontAwesomeIcon
-                  icon={faArrowRight}
-                  className="hero-cta-icon"
-                />
-              </button>
-              <button className="hero-cta-secondary w-full sm:w-auto border-2 border-gray-800 text-gray-800 px-8 py-4 rounded-lg hover:bg-gray-800 hover:text-white transition-colors">
-                View Deals
-              </button>
+              <a href="/collection/audio">
+                <button className="hero-cta-primary w-full sm:w-auto bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center gap-2">
+                  Shop Now
+                  <FontAwesomeIcon
+                    icon={faArrowRight}
+                    className="hero-cta-icon"
+                  />
+                </button>
+              </a>
+              {/* <a href="#">
+                <button className="hero-cta-secondary w-full sm:w-auto border-2 border-gray-800 text-gray-800 px-8 py-4 rounded-lg hover:bg-gray-800 hover:text-white transition-colors">
+                  View Deals
+                </button>
+              </a> */}
             </div>
           </div>
 

@@ -36,7 +36,7 @@ const ProductCard = ({ product }) => {
           </span>
         </div>
         <p className="product-price text-lg font-bold text-indigo-600">
-          ${product.price}
+          ₹{product.price}
         </p>
       </div>
     </Link>
