@@ -11,6 +11,7 @@ const AddProduct = () => {
     image: [],
     specifications: "",
     productReview: "",
+    amazonAffiliate: "",
   });
 
   const [loading, setLoading] = useState(false);
@@ -139,6 +140,8 @@ const AddProduct = () => {
         category: "",
         image: [],
         specifications: [{ name: "", value: "" }],
+        productReview: "",
+        amazonAffiliate: "",
       });
       setSelectedFiles([]);
     } catch (error) {
@@ -394,6 +397,25 @@ const AddProduct = () => {
             />
             <p className="mt-2 text-sm text-gray-500">
               Add YouTube review video links (optional)
+            </p>
+          </div>
+
+          {/* Affiliate Link */}
+
+          <div className="form-group">
+            <label className="text-sm font-semibold text-gray-700 mb-2 block">
+              Amazon Affiliate Link
+            </label>
+            <input
+              type="text"
+              name="amazonAffiliate"
+              value={formData.amazonAffiliate}
+              onChange={handleChange}
+              placeholder="Enter affiliate URL"
+              className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition-all duration-200"
+            />
+            <p className="mt-2 text-sm text-gray-500">
+              Add amazon affiliate link (optional)
             </p>
           </div>
 

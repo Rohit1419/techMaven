@@ -147,24 +147,12 @@ const ProductPage = () => {
                 {/* Buy Buttons */}
                 <div className="space-y-4">
                   <a
-                    href="#"
+                    href={product.amazonAffiliate}
                     className="flex items-center justify-between p-4 border rounded-lg hover:border-indigo-600 group"
                   >
                     <div className="flex items-center gap-3">
                       <AiOutlineAmazon className="text-2xl group-hover:text-indigo-600" />
                       <span>Buy on Amazon</span>
-                    </div>
-                    <span className="font-semibold text-indigo-600">
-                      ₹{product.price}
-                    </span>
-                  </a>
-                  <a
-                    href="#"
-                    className="flex items-center justify-between p-4 border rounded-lg hover:border-indigo-600 group"
-                  >
-                    <div className="flex items-center gap-3">
-                      <SiFlipkart className="text-2xl group-hover:text-indigo-600" />
-                      <span>Buy on Flipkart</span>
                     </div>
                     <span className="font-semibold text-indigo-600">
                       ₹{product.price}

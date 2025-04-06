@@ -38,6 +38,10 @@ const productSchema = new mongoose.Schema({
     type: String,
     required: false,
   },
+  amazonAffiliate: {
+    type: String,
+    required: false,
+  },
 
   createdAt: {
     type: Date,
